@@ -1,0 +1,45 @@
+PISI - Packages Installed Succesfully as Intended
+
+PISI is a new package manager for the PARDUS
+distribution. In Turkish PISI means "kitty", and
+like a kitty, it is featureful and small.
+
+Some of its distinctive features:
+
+ - Implemented in python
+ - Efficient and small
+ - Package sources are written in XML and python
+ - Uses LZMA for a better compression ratio 
+ - Fast database access implemented with berkeley DB
+ - Integrates low-level and high-level package operations (dependency resolution)
+ - Framework approach to build applications and tools upon
+ - Comprehensive CLI and a user-friendly qt GUI (distributed separately)
+ - Extremely simple package construction
+
+Build Dependencies:
+
+* comar
+* plyvel
+* python 2.7
+* gettext
+* libunwind-devel
+* intltool
+* leveldb-devel 1.8
+
+
+Runtime Dependencies:
+
+* tar
+* file
+* comar
+* plyvel
+* python
+* gettext
+* leveldb 1.8
+* piksemel
+* comar-api
+* urlgrabber
+* python-psutil
+* libunwind
+* python-pyliblzma
+* mudur 4.4.0
