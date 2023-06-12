@@ -66,14 +66,14 @@ def install(parameters = '', pyVer = ''):
     if system('python%s setup.py install --root=%s --no-compile -O0 %s' % (pyVer, get.installDIR(), parameters)):
         raise InstallError, _('Install failed.')
 
-    docFiles = ('AUTHORS', 'CHANGELOG', 'CONTRIBUTORS', 'COPYING*', 'COPYRIGHT',
-                'Change*', 'KNOWN_BUGS', 'LICENSE', 'MAINTAINERS', 'NEWS',
-                'README*', 'PKG-INFO')
+#    docFiles = ('AUTHORS', 'CHANGELOG', 'CONTRIBUTORS', 'COPYING*', 'COPYRIGHT',
+#                'Change*', 'KNOWN_BUGS', 'LICENSE', 'MAINTAINERS', 'NEWS',
+#                'README*', 'PKG-INFO')
 
-    for docGlob in docFiles:
-        for doc in glob.glob(docGlob):
-            if not isEmpty(doc):
-                dodoc(doc)
+#    for docGlob in docFiles:
+#        for doc in glob.glob(docGlob):
+#            if not isEmpty(doc):
+#                dodoc(doc)
 
 def run(parameters = '', pyVer = ''):
     '''executes parameters with python'''
